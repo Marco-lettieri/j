@@ -1,0 +1,81 @@
+/* Stilizzazione di base */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.number-display {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.draw-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.draw-button:hover {
+    background-color: #2ecc71;
+}
+
+.message {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-top: 20px;
+}
+
+/* Tabellone */
+.tabellone {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.tabellone div {
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tabellone .estratto {
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: line-through;
+}
